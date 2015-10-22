@@ -1,7 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
 
-datafilelist = os.popen('find -name AndroidManifest.xml').read().split()
+datafilelist = os.popen('find . -name AndroidManifest.xml').read().split()
 datefile1 = None
 datefile2 = None
 for datafile in datafilelist:
